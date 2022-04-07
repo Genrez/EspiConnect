@@ -318,8 +318,9 @@ GameObject:
   - component: {fileID: 1171233628}
   - component: {fileID: 1171233627}
   - component: {fileID: 1171233630}
+  - component: {fileID: 1171233631}
   m_Layer: 0
-  m_Name: Enemies_2
+  m_Name: Blue Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -439,6 +440,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1171233631
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171233626}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0827f0d5f2968bd42970f77e56c866b8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1263031880
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,7 +473,7 @@ GameObject:
   - component: {fileID: 1263031881}
   - component: {fileID: 1263031884}
   m_Layer: 0
-  m_Name: Enemies_9
+  m_Name: Green Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -669,7 +690,7 @@ GameObject:
   - component: {fileID: 1729457571}
   - component: {fileID: 1729457572}
   m_Layer: 0
-  m_Name: Enemies_3
+  m_Name: Red Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
