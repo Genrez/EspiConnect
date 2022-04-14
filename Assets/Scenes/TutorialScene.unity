@@ -472,6 +472,7 @@ GameObject:
   - component: {fileID: 1263031882}
   - component: {fileID: 1263031881}
   - component: {fileID: 1263031884}
+  - component: {fileID: 1263031885}
   m_Layer: 0
   m_Name: Green Robot
   m_TagString: Untagged
@@ -593,6 +594,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1263031885
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263031880}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1cd953b1832a4854f9cb4764a291cc87, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1310416784
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,9 +865,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d093bda729be965498b452d08bcc9184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interpSpeed: 0.5
+  interpSpeed: 0.3
   animator: {fileID: 1833414941}
-  speed: 0.1
+  speed: 0.07
 --- !u!212 &1833414939
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -972,7 +993,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
