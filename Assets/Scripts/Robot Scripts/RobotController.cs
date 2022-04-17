@@ -12,7 +12,7 @@ public class RobotController : MonoBehaviour
     {
         if (playerInView)
         {
-            Debug.Log(robot.name + " can see the player");
+            //Debug.Log(robot.name + " can see the player");
         }
     }
 
