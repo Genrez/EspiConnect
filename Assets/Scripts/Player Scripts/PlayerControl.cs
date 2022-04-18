@@ -8,6 +8,17 @@ public class PlayerControl : MonoBehaviour
     public Animator animator;
     public float speed;
     //private Vector3 targetPos;
+    private Vector2 moveInput;
+    private float activeSpeed;
+    public float dashSpeed;
+    public float dashLength = .5f, dashCooldown = 1f;
+    private float dashCounter;
+    private float dashCoolCounter;
+
+    void Start()
+    {
+        activeSpeed = speed;   
+    }
 
     // Update is called once per frame
     void Update()
@@ -27,6 +38,32 @@ public class PlayerControl : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (dashCoolCounter <=0 && dashCounter <=0)
+            {
+                activeSpeed = dashSpeed;
+                dashCounter = dashLength;
+            }
+        }
+
+        if (dashCounter > 0)
+        {
+            dashCounter -= Time.deltaTime;
+
+            if (dashCounter <= 0)
+            {
+                activeSpeed = speed;
+                dashCoolCounter = dashCooldown;
+            }
+
+            if (dashCoolCounter > 0)
+            {
+                dashCoolCounter -= Time.deltaTime;
+            }
+
+        }
+        
 
     }
 
