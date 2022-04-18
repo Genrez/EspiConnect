@@ -5,7 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private string robotTouching = "";
-    public PlayerTransform playerTransform;
+    private string playerState = "Player"; 
+    private PlayerTransform playerTransform;
+
+    void Start()
+    {
+        playerTransform = GetComponent<PlayerTransform>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -23,5 +29,15 @@ public class PlayerController : MonoBehaviour
     public void SetRobotTouching(string robot)
     {
         robotTouching = robot;
+    }
+
+    public void SetPlayerState(string playerState)
+    {
+        this.playerState = playerState;
+    }
+
+    public string getPlayerState()
+    {
+        return playerState;
     }
 }

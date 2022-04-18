@@ -4,23 +4,27 @@ using UnityEngine;
 
 public class PlayerTransform : MonoBehaviour
 {
-    private GameObject objectToTransform;
     private SpriteRenderer playerSpriteRenderer;
+    private PlayerController playerController;
 
     private void Start()
     {
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
+        playerController = GetComponent<PlayerController>();
     }
 
-    public void Transform(string objectToTransform)
+    public void Transform(string robotName)
     {
-        this.objectToTransform = GameObject.Find(objectToTransform);
+        GameObject newRobot = GameObject.Find(robotName);
         GetComponent<Animator>().enabled = false;
-        playerSpriteRenderer.sprite = this.objectToTransform.GetComponent<SpriteRenderer>().sprite;
+        playerSpriteRenderer.sprite = newRobot.GetComponent<SpriteRenderer>().sprite;
+        playerController.SetPlayerState(newRobot.name);
+
     }
 
     public void RevertTransform()
     {
         GetComponent<Animator>().enabled = true;
+        playerController.SetPlayerState("Player");
     }
 }

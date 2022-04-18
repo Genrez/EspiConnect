@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    public PlayerController playerController;
+    private PlayerController playerController;
+
+    void Start()
+    {
+        playerController = GetComponent<PlayerController>();
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

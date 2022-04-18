@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class DetectionScript : MonoBehaviour
 {
-    public CapsuleCollider2D capsuleCollider;
-    public PolygonCollider2D polygonCollider;
-    public BoxCollider2D playerCollider;
+    private CapsuleCollider2D capsuleCollider;
+    private PolygonCollider2D polygonCollider;
+    private BoxCollider2D playerCollider;
     public RobotController robotcontroller;
+
+    void Start()
+    {
+        playerCollider = GameObject.Find("Player").GetComponent<BoxCollider2D>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
+        polygonCollider = GetComponent<PolygonCollider2D>();
+    }
 
     // Update is called once per frame
     void Update()
