@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         this.playerState = playerState;
     }
 
-    public string getPlayerState()
+    public string GetPlayerState()
     {
         return playerState;
     }

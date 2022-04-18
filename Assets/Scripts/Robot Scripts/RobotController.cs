@@ -18,7 +18,7 @@ public class RobotController : MonoBehaviour
     {
         if (playerInView)
         {
-            if (gameObject.name != playerController.getPlayerState())
+            if (gameObject.name != playerController.GetPlayerState())
             {
                 Debug.Log(gameObject.name + " found the player.");
             }
