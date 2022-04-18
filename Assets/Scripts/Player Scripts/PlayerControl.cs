@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    public float interpSpeed;
+    //public float interpSpeed;
     public Animator animator;
     public float speed;
-    private Vector3 targetPos;
+    //private Vector3 targetPos;
 
     // Update is called once per frame
     void Update()
