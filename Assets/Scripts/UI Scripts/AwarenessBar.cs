@@ -43,7 +43,12 @@ public class Awareness
 
     public void Update()
     {
+        //increase
+        //if statement?
         awarnessAmount += awarnessRegenAmount * Time.deltaTime;
+
+        //decrease
+        //awarnessAmount -= awarnessRegenAmount * Time.deltaTime;
     }
     public float GetAwarenessNormalized()
     {

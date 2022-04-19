@@ -1100,7 +1100,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1008447369
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1709,6 +1709,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1551972182426585093, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1008447368}
     - target: {fileID: 2944056412994424781, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_Name
       value: Green Robot
@@ -1766,6 +1770,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4226973921042598128, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1008447368}
     - target: {fileID: 7660453683944034887, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
       propertyPath: m_Name
       value: Red Robot
@@ -1871,5 +1879,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Robot
       objectReference: {fileID: 0}
+    - target: {fileID: 7235218181887931870, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1008447368}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
