@@ -16,4 +16,9 @@ public class AsyncLoader : MonoBehaviour
     {
         SceneManager.LoadScene("TutorialScene");
     }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("MenuScreen");
+    }
 }
