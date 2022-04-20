@@ -61,13 +61,14 @@ public class PlayerControl : MonoBehaviour
                 speed = activeSpeed;
                 dashCoolCounter = dashCooldown;
             }
+        }
 
-            if (dashCoolCounter > 0)
+        if (dashCoolCounter > 0)
             {
                 dashCoolCounter -= Time.deltaTime;
             }
 
-        }
+        
     }
 
     void FixedUpdate()

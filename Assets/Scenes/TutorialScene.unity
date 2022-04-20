@@ -1597,7 +1597,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1625,7 +1625,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -1911,7 +1911,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1180928854118884585, guid: c469bedfb9cf0417c98ff578d04736df, type: 3}
       propertyPath: speed
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1180928854118884585, guid: c469bedfb9cf0417c98ff578d04736df, type: 3}
       propertyPath: player
@@ -1919,7 +1919,15 @@ PrefabInstance:
       objectReference: {fileID: 1833414942}
     - target: {fileID: 1180928854118884585, guid: c469bedfb9cf0417c98ff578d04736df, type: 3}
       propertyPath: dashSpeed
-      value: 10
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180928854118884585, guid: c469bedfb9cf0417c98ff578d04736df, type: 3}
+      propertyPath: dashLength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180928854118884585, guid: c469bedfb9cf0417c98ff578d04736df, type: 3}
+      propertyPath: dashCooldown
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2004057696489508955, guid: c469bedfb9cf0417c98ff578d04736df, type: 3}
       propertyPath: m_Name
