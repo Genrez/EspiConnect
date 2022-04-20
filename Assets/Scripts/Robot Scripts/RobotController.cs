@@ -6,6 +6,7 @@ public class RobotController : MonoBehaviour
 {
     private bool playerInView = false;
     private PlayerController playerController;
+    public GameObject target;
 
     //This method is called at the start
     void Start()
@@ -20,10 +21,15 @@ public class RobotController : MonoBehaviour
         {
             if (gameObject.name != playerController.GetPlayerState())
             {
-                Debug.Log(gameObject.name + " found the player.");
+                target.SetActive(true);
             }
 
         }
+        //else
+        //{
+        //    target.SetActive(false);
+        //}
+        
     }
 
     public void IsPlayerInView(bool isInView)
