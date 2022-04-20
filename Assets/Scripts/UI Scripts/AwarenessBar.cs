@@ -21,7 +21,7 @@ public class AwarenessBar : MonoBehaviour
         awareness.Update();
 
         barImage.fillAmount = awareness.GetAwarenessNormalized();
-        if(barImage.fillAmount == 1)
+        if (barImage.fillAmount == 1)
         {
             target.SetActive(true);
         }

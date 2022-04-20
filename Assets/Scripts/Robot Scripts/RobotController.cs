@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RobotController : MonoBehaviour
 {
-    private bool playerInView = false;
+    public bool playerInView = false;
     private PlayerController playerController;
     public GameObject target;
 
