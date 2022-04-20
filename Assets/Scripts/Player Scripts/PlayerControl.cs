@@ -5,44 +5,49 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     //public float interpSpeed;
+    public Rigidbody2D player;
     public Animator animator;
     public float speed;
+    Vector2 movement;
     //private Vector3 targetPos;
-    private Vector2 moveInput;
     private float activeSpeed;
     public float dashSpeed;
     public float dashLength = .5f, dashCooldown = 1f;
     private float dashCounter;
     private float dashCoolCounter;
 
+
     void Start()
     {
+        
         activeSpeed = speed;   
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Magnitude", movement.magnitude);
-        transform.position = transform.position + movement * speed;
-
-        if (GetComponent<Rigidbody2D>().velocity.magnitude >= 0.001)
+        if (movement != Vector2.zero)
         {
-            if (!GetComponent<AudioSource>().isPlaying)
-            {
-                
-            }
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+        }
+        animator.SetFloat("Magnitude", movement.sqrMagnitude);
+        // transform.position = transform.position + movement * speed;
+        AudioSource audio = GetComponent<AudioSource>();
+
+        if (movement.magnitude >= 0.001 && !audio.isPlaying)
+        {
+               audio.Play();
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (dashCoolCounter <=0 && dashCounter <=0)
             {
-                activeSpeed = dashSpeed;
+                speed = dashSpeed;
                 dashCounter = dashLength;
             }
         }
@@ -53,7 +58,7 @@ public class PlayerControl : MonoBehaviour
 
             if (dashCounter <= 0)
             {
-                activeSpeed = speed;
+                speed = activeSpeed;
                 dashCoolCounter = dashCooldown;
             }
 
@@ -63,5 +68,10 @@ public class PlayerControl : MonoBehaviour
             }
 
         }
+    }
+
+    void FixedUpdate()
+    {
+        player.MovePosition(player.position + movement * speed * Time.fixedDeltaTime);
     }
 }
