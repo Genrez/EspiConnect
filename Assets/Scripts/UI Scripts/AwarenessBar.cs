@@ -9,6 +9,7 @@ public class AwarenessBar : MonoBehaviour
     private Awareness awareness;
     private Image barImage;
     public GameObject target;
+    
     private void Awake()
     {
         barImage = transform.Find("bar").GetComponent<Image>();
@@ -43,12 +44,15 @@ public class Awareness
 
     public void Update()
     {
-        //increase
-        //if statement?
-        awarnessAmount += awarnessRegenAmount * Time.deltaTime;
-
-        //decrease
-        //awarnessAmount -= awarnessRegenAmount * Time.deltaTime;
+       
+      //  if (inView == true)
+       // {
+            awarnessAmount += awarnessRegenAmount * Time.deltaTime;
+      //  } else
+      //  {
+      //      awarnessAmount -= awarnessRegenAmount * Time.deltaTime;
+      //  }
+    
     }
     public float GetAwarenessNormalized()
     {
