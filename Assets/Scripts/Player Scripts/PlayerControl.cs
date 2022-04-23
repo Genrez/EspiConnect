@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    public ParticleSystem dust;
     //public float interpSpeed;
     public Rigidbody2D player;
     public Animator animator;
@@ -74,5 +75,11 @@ public class PlayerControl : MonoBehaviour
     void FixedUpdate()
     {
         player.MovePosition(player.position + movement * speed * Time.fixedDeltaTime);
+        CreateDust();
+    }
+
+    void CreateDust()
+    {
+        dust.Play();
     }
 }
