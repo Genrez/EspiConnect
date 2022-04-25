@@ -1265,7 +1265,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 368893668}
         m_TargetAssemblyTypeName: AsyncLoader, Assembly-CSharp
-        m_MethodName: LoadTutorial
+        m_MethodName: LoadVideoScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
