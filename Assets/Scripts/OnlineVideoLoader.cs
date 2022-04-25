@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class OnlineVideoLoader : MonoBehaviour
 {
-
+    private bool finished = false;
     public VideoPlayer videoPlayer;
     public string videoUrl = "yourvideourl";
 
@@ -24,15 +24,21 @@ public class OnlineVideoLoader : MonoBehaviour
     void Update()
     {
         videoPlayer.loopPointReached += EndReached;
-        
+        if (finished == true)
+        {
+            LoadTutorial();
+        }
     }
 
     void EndReached(UnityEngine.Video.VideoPlayer vp)
     {
         vp.playbackSpeed = vp.playbackSpeed / 10.0F;
-        Time.timeScale = 1;
-        SceneManager.LoadScene("TutorialScene");
+        finished = true;
+    }
 
+    void LoadTutorial()
+    {
+        SceneManager.LoadScene("TutorialScene");
     }
 
 }
