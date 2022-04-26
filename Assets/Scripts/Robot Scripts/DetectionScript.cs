@@ -24,10 +24,10 @@ public class DetectionScript : MonoBehaviour
     void Update()
     {
         if (capsuleCollider.IsTouching(playerCollider) || polygonCollider.IsTouching(playerCollider) || edgeCollider1.IsTouching(playerCollider) || edgeCollider2.IsTouching(playerCollider)) {
-            robotcontroller.IsPlayerInView(true);
+            robotcontroller.SetPlayerInView(true);
         }
         else {
-            robotcontroller.IsPlayerInView(false);
+            robotcontroller.SetPlayerInView(false);
         }
     }
 }

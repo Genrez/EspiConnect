@@ -32,7 +32,7 @@ public class RobotController : MonoBehaviour
         
     }
 
-    public void IsPlayerInView(bool isInView)
+    public void SetPlayerInView(bool isInView)
     {
         playerInView = isInView;
     }
