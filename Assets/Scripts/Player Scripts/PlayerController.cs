@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public ParticleSystem hack;
     private string robotTouching = "";
     private string playerState = "Player"; 
     private PlayerTransform playerTransform;
@@ -17,11 +18,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (robotTouching != "" && Input.GetKeyDown(KeyCode.E)) {
+            hack.Play();
             playerTransform.Transform(robotTouching);
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
+            hack.Play();
             playerTransform.RevertTransform();
         }
     }
