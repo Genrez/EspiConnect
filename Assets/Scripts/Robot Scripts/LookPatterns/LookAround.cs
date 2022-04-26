@@ -17,7 +17,7 @@ public class LookAround : MonoBehaviour
         StartCoroutine("LookA");
     }
 
-    IEnumerator LookA()
+    IEnumerator LookA() //Makes Robot Look Right (0,1) before switching to LookB 2 seconds
     {
        animator.SetFloat("Vertical", 0);
        animator.SetFloat("Horizontal", 1);
@@ -25,7 +25,7 @@ public class LookAround : MonoBehaviour
         StartCoroutine("LookB");
     }
 
-    IEnumerator LookB()
+    IEnumerator LookB() //Makes Robot Look Down (-1,0) before switching to LookA 2 seconds
     {
         animator.SetFloat("Vertical", -1);
         animator.SetFloat("Horizontal", 0);
