@@ -6,12 +6,13 @@ public class RobotController : MonoBehaviour
 {
     public bool playerInView = false;
     private PlayerController playerController;
-    public GameObject target;
+    private AwarenessBar awarenessBar;
 
     //This method is called at the start
     void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+        awarenessBar = GameObject.Find("AwarenessBar").GetComponent<AwarenessBar>();
     }
 
     // Update is called once per frame
@@ -21,15 +22,13 @@ public class RobotController : MonoBehaviour
         {
             if (gameObject.name != playerController.GetPlayerState())
             {
-                target.SetActive(true);
+                awarenessBar.awareness.IncreaseAwarenessBar();
             }
-
         }
-        //else
-        //{
-        //    target.SetActive(false);
-        //}
-        
+        else if (!playerInView)
+        {
+            awarenessBar.awareness.DecreaseAwarenessBar();
+        }
     }
 
     public void SetPlayerInView(bool isInView)

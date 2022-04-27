@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class AwarenessBar : MonoBehaviour
 {
-    private Awareness awareness;
+    public Awareness awareness;
     private Image barImage;
-    public GameObject target;
+    public GameObject gameOverObject;
     
     private void Awake()
     {
@@ -18,12 +18,12 @@ public class AwarenessBar : MonoBehaviour
 
     private void Update()
     {
-        awareness.Update();
+        //awareness.Update();
 
         barImage.fillAmount = awareness.GetAwarenessNormalized();
         if (barImage.fillAmount == 1)
         {
-            target.SetActive(true);
+            gameOverObject.SetActive(true);
         }
     }
 }
@@ -41,19 +41,19 @@ public class Awareness
         awarnessRegenAmount = 20f;
     }
 
-    public void Update()
+    public void IncreaseAwarenessBar()
     {
-       
-      //  if (inView == true)
-       // {
-            awarnessAmount += awarnessRegenAmount * Time.deltaTime;
-        //  } else
-        //  {
-        //      awarnessAmount -= awarnessRegenAmount * Time.deltaTime;
-        //  }
-     
-
+        awarnessAmount += awarnessRegenAmount * Time.deltaTime;
     }
+
+    public void DecreaseAwarenessBar()
+    {
+        if (awarnessAmount > 0)
+        {
+            awarnessAmount -= awarnessRegenAmount * Time.deltaTime;
+        }
+    }
+
     public float GetAwarenessNormalized()
     {
         return awarnessAmount / Awareness_MAX;
