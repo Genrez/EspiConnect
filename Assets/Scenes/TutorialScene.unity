@@ -6201,7 +6201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f856a9be3e6c3c42a6f5a9322d40ca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  gameOverObject: {fileID: 0}
 --- !u!114 &612003310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6215,7 +6215,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInView: 0
-  target: {fileID: 0}
 --- !u!4 &612003311
 Transform:
   m_ObjectHideFlags: 0
@@ -6830,7 +6829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1008447369
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6865,7 +6864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f856a9be3e6c3c42a6f5a9322d40ca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 68846563}
+  gameOverObject: {fileID: 68846563}
 --- !u!1 &1044038042
 GameObject:
   m_ObjectHideFlags: 0
@@ -12544,7 +12543,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInView: 0
-  target: {fileID: 0}
 --- !u!4 &2019197120
 Transform:
   m_ObjectHideFlags: 0
@@ -12799,6 +12797,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1008447368}
+    - target: {fileID: 5568183642762448330, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
+      propertyPath: awarenessBar
+      value: 
+      objectReference: {fileID: 1008447368}
     - target: {fileID: 7126681421655772981, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -12904,6 +12906,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1008447368}
+    - target: {fileID: 6508172968617571858, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
+      propertyPath: awarenessBar
+      value: 
+      objectReference: {fileID: 1008447368}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
 --- !u!1001 &7004428352787563192
@@ -12967,6 +12973,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7004428351567533302, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: target
+      value: 
+      objectReference: {fileID: 1008447368}
+    - target: {fileID: 7004428351567533302, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
+      propertyPath: awarenessBar
       value: 
       objectReference: {fileID: 1008447368}
     m_RemovedComponents: []
