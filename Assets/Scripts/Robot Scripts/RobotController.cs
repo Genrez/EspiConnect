@@ -22,6 +22,7 @@ public class RobotController : MonoBehaviour
         {
             if (gameObject.name != playerController.GetPlayerState())
             {
+                Debug.Log("In view");
                 awarenessBar.awareness.IncreaseAwarenessBar();
             }
         }
