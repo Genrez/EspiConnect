@@ -28,7 +28,15 @@ public class PlayerControl : MonoBehaviour
     void Update()
     {
         if (DialogueManager.isActive == true)
-            return;
+        {
+
+            speed = 0;
+                return;
+        } else
+        {
+            speed = activeSpeed;
+        }
+            
 
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
