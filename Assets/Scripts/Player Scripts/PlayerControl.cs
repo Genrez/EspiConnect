@@ -30,12 +30,9 @@ public class PlayerControl : MonoBehaviour
         if (DialogueManager.isActive == true)
         {
 
-            speed = 0;
-                return;
-        } else
-        {
-            speed = activeSpeed;
-        }
+            animator.SetFloat("Magnitude", 0);
+            return;
+        } 
             
 
         movement.x = Input.GetAxisRaw("Horizontal");
