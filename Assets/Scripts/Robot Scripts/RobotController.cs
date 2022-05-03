@@ -5,12 +5,15 @@ using UnityEngine;
 public class RobotController : MonoBehaviour
 {
     public bool playerInView = false;
+    public bool robotVision = false;
     private PlayerController playerController;
     private AwarenessBar awarenessBar;
+    public string robotType;
 
     //This method is called at the start
     void Start()
     {
+        
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         awarenessBar = GameObject.Find("AwarenessBar").GetComponent<AwarenessBar>();
     }
@@ -34,6 +37,15 @@ public class RobotController : MonoBehaviour
 
     public void SetPlayerInView(bool isInView)
     {
-        playerInView = isInView;
+        if (robotVision)
+        { playerInView = isInView;  }
+        else
+        { playerInView = false; }
+
+
+    }
+    public void SetRobotVision(bool vison)
+    {
+        robotVision = vison;
     }
 }
