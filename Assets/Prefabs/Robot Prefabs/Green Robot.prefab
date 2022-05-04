@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9159047127820435517}
   - component: {fileID: 2365995588338801919}
   - component: {fileID: 1435063901808355371}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Detection Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -476,7 +476,7 @@ GameObject:
   - component: {fileID: 6987635013295686372}
   - component: {fileID: 4639930449319000928}
   - component: {fileID: 3383385956565434817}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Detection Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 6204678272137964064}
   - component: {fileID: 2690981005280348842}
   - component: {fileID: 579270426445995881}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 1167748388019378789}
   - component: {fileID: 5168746610312483644}
   - component: {fileID: 2037924586255496515}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Detection Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}

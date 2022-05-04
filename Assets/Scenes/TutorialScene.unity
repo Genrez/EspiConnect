@@ -5219,6 +5219,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2154808718758049211, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5508830662580191563, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5266,6 +5270,22 @@ PrefabInstance:
     - target: {fileID: 6229683896008527804, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_Name
       value: Green Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542384216480164961, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883935225684733285, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721031994597050484, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
+      propertyPath: gameoverScreen
+      value: 
+      objectReference: {fileID: 68846565}
+    - target: {fileID: 8952782623917728640, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9159047127820435517, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_AnchorMax.x
@@ -12668,6 +12688,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1268637642310659419, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2420640147110410369, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835615207208614489, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4195485775183386236, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
       propertyPath: m_Name
       value: DetectionIndicator
@@ -12676,6 +12708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Robot
       objectReference: {fileID: 0}
+    - target: {fileID: 5674140296493823978, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
+      propertyPath: gameoverScreen
+      value: 
+      objectReference: {fileID: 68846565}
     - target: {fileID: 6998523393837004053, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12718,6 +12754,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6998523393837004053, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624684327159783758, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8941200333280414880, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
@@ -41073,6 +41113,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2259854293015797391, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252943949984533978, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4538520828252799750, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -41089,6 +41137,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1640087885
       objectReference: {fileID: 0}
+    - target: {fileID: 6465728622289132533, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6508172968617571858, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
       propertyPath: target
       value: 
@@ -41097,6 +41149,10 @@ PrefabInstance:
       propertyPath: awarenessBar
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6508172968617571858, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
+      propertyPath: gameoverScreen
+      value: 
+      objectReference: {fileID: 68846565}
     - target: {fileID: 6508172968858595572, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -41112,6 +41168,10 @@ PrefabInstance:
     - target: {fileID: 6508172968858595572, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195346968906359442, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
