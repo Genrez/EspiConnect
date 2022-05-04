@@ -5,7 +5,7 @@ using UnityEngine;
 public class RobotController : MonoBehaviour
 {
     public bool playerInView = false;
-    public PlayerController playerController;
+    private PlayerController playerController;
     public DetectionBar detectionBar;
     public GameOverScreen gameoverScreen;
 
