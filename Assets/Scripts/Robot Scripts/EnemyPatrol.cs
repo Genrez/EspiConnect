@@ -19,26 +19,26 @@ public class EnemyPatrol : MonoBehaviour
     {
         float tiltAroundZ = Input.GetAxis("Horizontal") * tiltAngle;
         Quaternion target = Quaternion.Euler(0, 0, tiltAroundZ);
-        if (item.transform.position == new Vector3(-7f, 3f))
+        if (item.transform.position == new Vector3(17f, 8f))
         {
             item.transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
-            tweener.AddTween(item.transform, item.transform.position, new Vector3(-7f, -9f), 1.0f);
+            tweener.AddTween(item.transform, item.transform.position, new Vector3(17f, -8f), 1.0f);
 
         }
-        if (item.transform.position == new Vector3(-7f, -9f))
+        if (item.transform.position == new Vector3(17f, -8f))
         {
             item.transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
-            tweener.AddTween(item.transform, item.transform.position, new Vector3(-10f, -9f), 1.0f);
+            tweener.AddTween(item.transform, item.transform.position, new Vector3(14f, -8f), 1.0f);
         }
-        if (item.transform.position == new Vector3(-10f, -9f))
+        if (item.transform.position == new Vector3(14f, -8f))
         {
             item.transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
-            tweener.AddTween(item.transform, item.transform.position, new Vector3(-10f, 3f), 1.0f);
+            tweener.AddTween(item.transform, item.transform.position, new Vector3(14f, 8f), 1.0f);
         }
-        if (item.transform.position == new Vector3(-10f, 3f))
+        if (item.transform.position == new Vector3(14f, 8f))
         {
             item.transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
-            tweener.AddTween(item.transform, item.transform.position, new Vector3(-7f, 3f), 1.0f);
+            tweener.AddTween(item.transform, item.transform.position, new Vector3(17f, 8f), 1.0f);
         }
     }
 
