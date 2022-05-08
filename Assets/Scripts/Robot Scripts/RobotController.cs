@@ -5,8 +5,9 @@ using UnityEngine;
 public class RobotController : MonoBehaviour
 {
     public bool playerInView = false;
-    public PlayerController playerController;
+    private PlayerController playerController;
     public DetectionBar detectionBar;
+    public GameOverScreen gameoverScreen;
 
     private float currentDetectionLevel = 0;
 
@@ -23,14 +24,18 @@ public class RobotController : MonoBehaviour
     {
         if (playerInView)
         {
-            if (gameObject.name != playerController.GetPlayerState())
+            if (gameObject.name.Substring(0, 5) != playerController.GetPlayerState().Substring(0, 5))
             {
-                IncreaseDetectionLevel(0.2f);
+                IncreaseDetectionLevel(0.4f);
             }
         }
         else if (!playerInView && currentDetectionLevel > 0)
         {
-            DecreaseDetectionLevel(0.2f);
+            DecreaseDetectionLevel(0.4f);
+        }
+        if (currentDetectionLevel >= 100)
+        {
+            gameoverScreen.gameObject.SetActive(true);
         }
     }
 

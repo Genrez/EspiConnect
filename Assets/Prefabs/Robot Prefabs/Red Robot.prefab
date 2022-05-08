@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInView: 0
+  playerController: {fileID: 0}
   detectionBar: {fileID: 5119522181893420549}
 --- !u!114 &1041398402007983126
 MonoBehaviour:
@@ -198,7 +199,7 @@ GameObject:
   - component: {fileID: 5669207821616664646}
   - component: {fileID: 1652572906787653107}
   - component: {fileID: 3790811644750826542}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +299,7 @@ GameObject:
   - component: {fileID: 4538520828252799750}
   - component: {fileID: 2787103061277930789}
   - component: {fileID: 8176462433141357593}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Detection Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +375,7 @@ GameObject:
   - component: {fileID: 4049916591593714298}
   - component: {fileID: 5610463051208205590}
   - component: {fileID: 8149493248655886357}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Detection Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,7 +668,7 @@ GameObject:
   - component: {fileID: 597869914665114988}
   - component: {fileID: 201196017217498555}
   - component: {fileID: 5119522181893420549}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Detection Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
