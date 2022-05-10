@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Robot
+  - Light
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - Water
   - UI
   - PostProcess
-  - UI
+  - 
   - 
   - 
   - 
@@ -44,10 +45,4 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 448103839
-    locked: 0
-  - name: Walls
-    uniqueID: 604702823
-    locked: 0
-  - name: UI
-    uniqueID: 1640087885
     locked: 0

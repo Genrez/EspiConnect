@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LookRightDown : MonoBehaviour
+public class LookAround : MonoBehaviour
 {
     public Rigidbody2D robot;
     public Animator animator;

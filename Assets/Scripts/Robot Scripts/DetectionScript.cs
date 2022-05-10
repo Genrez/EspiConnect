@@ -10,15 +10,20 @@ public class DetectionScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            
             robotcontroller.SetPlayerInView(true);
-        }
-    }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            robotcontroller.SetPlayerInView(false);
+
         }
     }
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+
+
+            if (collision.CompareTag("Player"))
+            {
+                robotcontroller.SetPlayerInView(false);
+            }
+        }
+    
 }

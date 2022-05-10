@@ -5,18 +5,17 @@ using UnityEngine;
 public class RobotController : MonoBehaviour
 {
     public bool playerInView = false;
+    public bool robotVision = false;
     private PlayerController playerController;
-    public DetectionBar detectionBar;
-    public GameOverScreen gameoverScreen;
-
-    private float currentDetectionLevel = 0;
-
+    private AwarenessBar awarenessBar;
+    public string robotType;
 
     //This method is called at the start
     void Start()
     {
+        
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
-        detectionBar.SetDetection(currentDetectionLevel);
+        awarenessBar = GameObject.Find("AwarenessBar").GetComponent<AwarenessBar>();
     }
 
     // Update is called once per frame
@@ -24,35 +23,29 @@ public class RobotController : MonoBehaviour
     {
         if (playerInView)
         {
-            if (gameObject.name.Substring(0, 5) != playerController.GetPlayerState().Substring(0, 5))
+            if (gameObject.name != playerController.GetPlayerState())
             {
-                IncreaseDetectionLevel(0.4f);
+                Debug.Log("In view");
+                awarenessBar.awareness.IncreaseAwarenessBar();
             }
         }
-        else if (!playerInView && currentDetectionLevel > 0)
+        else if (!playerInView)
         {
-            DecreaseDetectionLevel(0.4f);
+            awarenessBar.awareness.DecreaseAwarenessBar();
         }
-        if (currentDetectionLevel >= 15)
-        {
-            gameoverScreen.gameObject.SetActive(true);
-        }
-    }
-
-    private void IncreaseDetectionLevel(float amountToIncrease)
-    {
-        currentDetectionLevel += amountToIncrease;
-        detectionBar.SetDetection(currentDetectionLevel);
-    }
-
-    private void DecreaseDetectionLevel(float amountToDecrease)
-    {
-        currentDetectionLevel -= amountToDecrease;
-        detectionBar.SetDetection(currentDetectionLevel);
     }
 
     public void SetPlayerInView(bool isInView)
     {
-        playerInView = isInView;
+        if (robotVision)
+        { playerInView = isInView;  }
+        else
+        { playerInView = false; }
+
+
+    }
+    public void SetRobotVision(bool vison)
+    {
+        robotVision = vison;
     }
 }
