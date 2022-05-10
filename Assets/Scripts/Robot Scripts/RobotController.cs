@@ -36,6 +36,8 @@ public class RobotController : MonoBehaviour
         if (currentDetectionLevel >= 20)
         {
             gameoverScreen.gameObject.SetActive(true);
+            AudioSource source1 = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
+            source1.Pause();
         }
     }
 

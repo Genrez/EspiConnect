@@ -20,7 +20,6 @@ public class PlayerControl : MonoBehaviour
 
     void Start()
     {
-        
         activeSpeed = speed;   
     }
 
@@ -40,10 +39,17 @@ public class PlayerControl : MonoBehaviour
 
         if (movement != Vector2.zero)
         {
+            CreateDust();
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
         }
         animator.SetFloat("Magnitude", movement.sqrMagnitude);
+
+        if (movement.sqrMagnitude < 0.01)
+        {
+            dust.Clear();
+            dust.Pause();
+        }
         // transform.position = transform.position + movement * speed;
         AudioSource audio = GetComponent<AudioSource>();
 
@@ -56,6 +62,7 @@ public class PlayerControl : MonoBehaviour
         {
             if (dashCoolCounter <=0 && dashCounter <=0)
             {
+                dust.startSize = 0.2f;
                 speed = dashSpeed;
                 dashCounter = dashLength;
             }
@@ -67,6 +74,7 @@ public class PlayerControl : MonoBehaviour
 
             if (dashCounter <= 0)
             {
+                dust.startSize = 0.1f;
                 speed = activeSpeed;
                 dashCoolCounter = dashCooldown;
             }
@@ -83,7 +91,6 @@ public class PlayerControl : MonoBehaviour
     void FixedUpdate()
     {
         player.MovePosition(player.position + movement * speed * Time.fixedDeltaTime);
-        CreateDust();
     }
 
     void CreateDust()
