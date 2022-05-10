@@ -33,7 +33,7 @@ public class RobotController : MonoBehaviour
         {
             DecreaseDetectionLevel(0.4f);
         }
-        if (currentDetectionLevel >= 15)
+        if (currentDetectionLevel >= 20)
         {
             gameoverScreen.gameObject.SetActive(true);
         }
