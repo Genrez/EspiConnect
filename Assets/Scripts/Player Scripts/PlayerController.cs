@@ -21,7 +21,11 @@ public class PlayerController : MonoBehaviour
             hack.Play();
             playerTransform.Transform(robotTouching);
         }
-
+        if (robotTouching != "" && Input.GetKeyDown(KeyCode.F))
+        {
+            RobotController robotToDisable = GameObject.Find(robotTouching).GetComponent<RobotController>();
+            robotToDisable.DisableRobot();
+        }
         if (Input.GetKeyDown(KeyCode.Q))
         {
             hack.Play();

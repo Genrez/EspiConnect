@@ -8,6 +8,7 @@ public class RobotController : MonoBehaviour
     private PlayerController playerController;
     public DetectionBar detectionBar;
     public GameOverScreen gameoverScreen;
+    public GameObject detectionIndicator;
 
     private float currentDetectionLevel = 0;
 
@@ -56,5 +57,10 @@ public class RobotController : MonoBehaviour
     public void SetPlayerInView(bool isInView)
     {
         playerInView = isInView;
+    }
+
+    public void DisableRobot()
+    {
+        detectionIndicator.SetActive(false);
     }
 }
