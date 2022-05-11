@@ -9,12 +9,12 @@ public class OnlineVideoLoader : MonoBehaviour
 {
     private bool finished = false;
     public VideoPlayer videoPlayer;
-    public string videoUrl = "yourvideourl";
+    //public string videoUrl = "yourvideourl";
 
     // Start is called before the first frame update
     void Start()
     {
-        videoPlayer.url = videoUrl;
+        //videoPlayer.url = videoUrl;
         videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
         videoPlayer.EnableAudioTrack(0, true);
         videoPlayer.Prepare();
@@ -32,7 +32,7 @@ public class OnlineVideoLoader : MonoBehaviour
 
     void EndReached(UnityEngine.Video.VideoPlayer vp)
     {
-        vp.playbackSpeed = vp.playbackSpeed / 10.0F;
+       // vp.playbackSpeed = vp.playbackSpeed / 10.0F;
         finished = true;
     }
 
