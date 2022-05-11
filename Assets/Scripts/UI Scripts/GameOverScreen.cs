@@ -13,6 +13,6 @@ public class GameOverScreen : MonoBehaviour
     }
     public void RestartButton()
     {
-        SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
