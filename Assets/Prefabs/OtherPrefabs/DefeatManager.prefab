@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7701701932769957564
+--- !u!1 &3876959624175732656
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1923614066087380964}
-  - component: {fileID: 4870936693125652836}
-  - component: {fileID: 9220310347730345237}
+  - component: {fileID: 5016526112484939496}
+  - component: {fileID: 2068630230257119336}
   m_Layer: 0
   m_Name: DefeatManager
   m_TagString: Untagged
@@ -18,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1923614066087380964
+--- !u!4 &5016526112484939496
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7701701932769957564}
+  m_GameObject: {fileID: 3876959624175732656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -63.125916, y: -23.446615, z: -128.98695}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,13 +32,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &4870936693125652836
+--- !u!82 &2068630230257119336
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7701701932769957564}
+  m_GameObject: {fileID: 3876959624175732656}
   m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -129,20 +128,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &9220310347730345237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7701701932769957564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33c18b97022e2434591b8f467c140938, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInView: 0
-  detectionBar: {fileID: 0}
-  gameoverScreen: {fileID: 0}
-  gameoverMusic: {fileID: 4870936693125652836}
-  music: {fileID: 0}

@@ -7,23 +7,29 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MenuScreen.unity
-    guid: 07771c9f31626f8499dc2b502448c03b
-  - enabled: 1
-    path: Assets/Scenes/TutorialScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 2138a43eada3e914ca22c09f64aa33ff
   - enabled: 1
     path: Assets/Scenes/Level1.unity
-    guid: 83aa9ac6b97cbd64bad8378ca56368a8
+    guid: e96c789a971e3f24792740d5e086e62e
   - enabled: 1
     path: Assets/Scenes/Level2.unity
-    guid: 79d843c56f3b3464e905dd5e46a27368
+    guid: 0184418d088f7af4a9b36fb4fbcd093d
   - enabled: 1
     path: Assets/Scenes/Level3.unity
-    guid: 6a6f6748f93669a4284680ef2a4458d5
+    guid: a31aa107e2f109a40b27e1213ab5b028
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 901a07b8820cdfa4c9811d98dfaf15c4
+  - enabled: 1
+    path: Assets/Scenes/TerrainTotorialScene.unity
+    guid: b5ac0aa8616fd7c499aca0385d7daf70
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: c45163953b080254cac95ab3d106959d
   - enabled: 1
     path: Assets/Scenes/VictoryScreen.unity
-    guid: 84907f27546cfb24685157e304e260e4
+    guid: 5c1ff7e9cb1174a4e9400ae436438971
   - enabled: 1
     path: Assets/Scenes/VideoScene.unity
-    guid: ca1fac4fc1c042d42b369afc10afe452
+    guid: 23df8262819a9fb4eaa40496ff189c36
   m_configObjects: {}
