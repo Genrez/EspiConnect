@@ -465,6 +465,7 @@ MonoBehaviour:
   playerInView: 0
   detectionBar: {fileID: 3383385956565434817}
   gameoverScreen: {fileID: 0}
+  detectionIndicator: {fileID: 2952049857113648543}
 --- !u!1 &6542384216480164961
 GameObject:
   m_ObjectHideFlags: 0
