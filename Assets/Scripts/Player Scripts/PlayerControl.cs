@@ -58,6 +58,7 @@ public class PlayerControl : MonoBehaviour
             {
                 speed = dashSpeed;
                 dashCounter = dashLength;
+                dust.startSize = 0.3f;
             }
         }
 
@@ -69,6 +70,7 @@ public class PlayerControl : MonoBehaviour
             {
                 speed = activeSpeed;
                 dashCoolCounter = dashCooldown;
+                dust.startSize = 0.1f;
             }
         }
 
