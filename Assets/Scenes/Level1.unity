@@ -215,7 +215,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 60, y: 60}
+  m_Size: {x: 100, y: 60}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -230,7 +230,7 @@ Transform:
   m_GameObject: {fileID: 36470528}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.02000001, y: 4.5, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1905885314}
@@ -7974,23 +7974,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   robot: {fileID: 1712450687}
   animator: {fileID: 1712450686}
---- !u!1 &1726574119 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 772350560429632677, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
-  m_PrefabInstance: {fileID: 1383963072}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1726574120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726574119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ffdac0b8119d7748a528d4a372e9c9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1768946554
 PrefabInstance:
   m_ObjectHideFlags: 0

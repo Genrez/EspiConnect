@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScreen.unity
     guid: 2138a43eada3e914ca22c09f64aa33ff
   - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: c45163953b080254cac95ab3d106959d
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: e96c789a971e3f24792740d5e086e62e
   - enabled: 1
@@ -20,12 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level4.unity
     guid: 901a07b8820cdfa4c9811d98dfaf15c4
-  - enabled: 1
-    path: Assets/Scenes/TerrainTotorialScene.unity
-    guid: b5ac0aa8616fd7c499aca0385d7daf70
-  - enabled: 1
-    path: Assets/Scenes/TutorialScene.unity
-    guid: c45163953b080254cac95ab3d106959d
   - enabled: 1
     path: Assets/Scenes/VictoryScreen.unity
     guid: 5c1ff7e9cb1174a4e9400ae436438971
