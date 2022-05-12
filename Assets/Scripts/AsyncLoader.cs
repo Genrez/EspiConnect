@@ -46,4 +46,9 @@ public class AsyncLoader : MonoBehaviour
     {
         SceneManager.LoadScene("Level4");
     }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }
