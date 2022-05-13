@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 17497
+  controlID: 24934
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 17498
+  controlID: 24935
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 17499
+  controlID: 24877
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -229,7 +229,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1e63ffffb277ffffb477ffffa47affff3caeffffe8dbffffa2dfffff80e0ffffdce0ffff8ae2ffff94e2ffff9ce2ffff76e5ffff62eaffffcaeeffff02f2ffff0cf2ffff80f2fffffaf3ffff64f4ffff00fbffff8e6700006c8f0000
+      m_ExpandedIDs: deb6feffecbcfeff22c4feff50fffeff5afffeff5efffeff3e04ffffc207ffff9210ffff4a17ffff861dffff1e63ffffb277ffffb477ffffa47affff3caeffffe8dbffffa2dfffff80e0ffffdce0ffff8ae2ffff94e2ffff9ce2ffff76e5ffff62eaffffcaeeffff02f2ffff0cf2ffff80f2fffffaf3ffff64f4ffff00fbffff8e6700006c8f00003e8c01000cb00100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -528,9 +528,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -97.364494, y: -74.514824, z: -0.06154835}
+    m_Target: {x: -119.36111, y: -31.201778, z: -0.02331225}
     speed: 2
-    m_Value: {x: -97.364494, y: -74.514824, z: -0.06154835}
+    m_Value: {x: -119.36111, y: -31.201778, z: -0.02331225}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -581,9 +581,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.909351
+    m_Target: 10.088031
     speed: 2
-    m_Value: 13.909351
+    m_Value: 10.088031
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -869,21 +869,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Robot Scripts/LookPatterns
+    - Assets/Scripts/Robot Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Robot Scripts/LookPatterns
+  - Assets/Scripts/Robot Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\richa\OneDrive\Desktop\UTSNOTES\Second Year\IntroToComputerGameDesign-31262\Assessments\Espi-Connect
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 240}
-    m_SelectedIDs: f25d0000
-    m_LastClickedID: 24050
+    scrollPos: {x: 0, y: 120}
+    m_SelectedIDs: b65d0000
+    m_LastClickedID: 23990
     m_ExpandedIDs: 00000000b05d0000b25d0000b45d0000b65d0000b85d0000ba5d0000bc5d0000d45d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -937,9 +937,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 9e22ffff
-    m_LastClickedInstanceID: -56674
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 7aaf0100
+    m_LastClickedInstanceID: 110458
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000a8560000fa5a00002c620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1056,7 +1056,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -56674
+  m_LastInspectedObjectInstanceID: 110458
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
