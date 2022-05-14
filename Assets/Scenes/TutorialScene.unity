@@ -277,7 +277,7 @@ PrefabInstance:
     - target: {fileID: 6508172968617571858, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
       propertyPath: gameoverScreen
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 857463265}
     m_RemovedComponents:
     - {fileID: 1041398402007983126, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
@@ -367,7 +367,7 @@ PrefabInstance:
     - target: {fileID: 7721031994597050484, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: gameoverScreen
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 857463265}
     - target: {fileID: 8952782623917728640, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -396,7 +396,7 @@ PrefabInstance:
     - target: {fileID: 5674140296493823978, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
       propertyPath: gameoverScreen
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 857463265}
     - target: {fileID: 6998523393837004053, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -517,7 +517,7 @@ PrefabInstance:
     - target: {fileID: 6508172968617571858, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
       propertyPath: gameoverScreen
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 857463265}
     - target: {fileID: 6508172968858595572, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
       propertyPath: m_LocalScale.x
       value: 10
@@ -628,7 +628,7 @@ PrefabInstance:
     - target: {fileID: 6508172968617571858, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
       propertyPath: gameoverScreen
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 857463265}
     - target: {fileID: 6508172968858595572, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
       propertyPath: m_LocalScale.x
       value: 10
@@ -701,6 +701,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8de605ff6bec9b4f89c4c41c2b4c035, type: 3}
+--- !u!114 &857463265 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6914531077739464624, guid: e8de605ff6bec9b4f89c4c41c2b4c035, type: 3}
+  m_PrefabInstance: {fileID: 857463264}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d96b98dbb77732b42971a736f9a56fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1076904811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5361786255699826606, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
@@ -6061,7 +6072,7 @@ PrefabInstance:
     - target: {fileID: 5674140296493823978, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
       propertyPath: gameoverScreen
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 857463265}
     - target: {fileID: 6688008306529423372, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
       propertyPath: m_LocalScale.x
       value: 7
