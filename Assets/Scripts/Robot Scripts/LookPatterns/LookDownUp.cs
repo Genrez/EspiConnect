@@ -6,7 +6,6 @@ public class LookDownUp : MonoBehaviour
 {
     public Rigidbody2D robot;
     public Animator animator;
-    private int speed = 5;
     void Awake()
     {
         StartCoroutine("LookA");
