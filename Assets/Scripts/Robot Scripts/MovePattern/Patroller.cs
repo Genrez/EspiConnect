@@ -12,7 +12,7 @@ public class Patroller : MonoBehaviour
 
     void Start()
     {
-        current = 0;  
+        current = 0;
     }
 
     void Update()
@@ -22,10 +22,7 @@ public class Patroller : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, points[current].position, speed * Time.deltaTime);
         }
         else
-        {
-            current = current + 1;
-        }
-            //current = (current + 1) % points.Length;
+            current = (current + 1) % points.Length;
 
         if (current == 0)
         {
