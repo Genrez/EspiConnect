@@ -28263,6 +28263,11 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[4].message
+      value: Use E to disguise as a robot. You must be close to a robot in order
+        to do this.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: messages.Array.data[8].message
       value: That'll be all, good luck my fellow Spy.
       objectReference: {fileID: 0}
