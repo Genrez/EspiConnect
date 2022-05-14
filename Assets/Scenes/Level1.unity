@@ -236,6 +236,103 @@ Transform:
   m_Father: {fileID: 1905885314}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &106437660
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2452452411522246438, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: m_Name
+      value: NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: Hey! You didn't get caught?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[1].message
+      value: What do you mean by that?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[2].message
+      value: '*cough* Nothing...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[3].message
+      value: Anyways, good luck. There'll be more robots ahead this time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[4].message
+      value: Don't forget to disguise and keep out of sight.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[5].message
+      value: That'll be all, good luck my fellow Spy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[6].message
+      value: That'll be all, good luck my fellow Spy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[7].message
+      value: That'll be all, good luck my fellow Spy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[8].message
+      value: That'll be all, good luck my fellow Spy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246443, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246443, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246443, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 33.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246443, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246443, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246443, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246443, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246443, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246443, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246443, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246443, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
 --- !u!1001 &116486110
 PrefabInstance:
   m_ObjectHideFlags: 0
