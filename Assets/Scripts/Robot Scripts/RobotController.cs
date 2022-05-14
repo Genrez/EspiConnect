@@ -39,6 +39,8 @@ public class RobotController : MonoBehaviour
             gameoverScreen.gameObject.SetActive(true);
             AudioSource audio = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
             audio.enabled = false;
+            AudioSource player = GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>();
+            player.enabled = false;
         }
     }
 

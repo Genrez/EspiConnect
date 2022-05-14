@@ -900,6 +900,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
+--- !u!1 &952347676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1149582280267033943, guid: e8de605ff6bec9b4f89c4c41c2b4c035, type: 3}
+  m_PrefabInstance: {fileID: 1500591499}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &988744956 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5361786255699826606, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
@@ -10444,6 +10449,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 538204538897175163, guid: 20f8636259929a4449885e64c1ab4869, type: 3}
+      propertyPath: dashLength
+      value: 0.00000001
+      objectReference: {fileID: 0}
     - target: {fileID: 924435838964524745, guid: 20f8636259929a4449885e64c1ab4869, type: 3}
       propertyPath: m_Name
       value: Player
@@ -10609,6 +10618,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book
       objectReference: {fileID: 0}
+    - target: {fileID: 6139814151753381376, guid: a6037ba636458284aab16ba7244c9204, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139814151753381386, guid: a6037ba636458284aab16ba7244c9204, type: 3}
+      propertyPath: victoryScreen
+      value: 
+      objectReference: {fileID: 952347676}
     - target: {fileID: 6139814151753381390, guid: a6037ba636458284aab16ba7244c9204, type: 3}
       propertyPath: m_RootOrder
       value: 9
