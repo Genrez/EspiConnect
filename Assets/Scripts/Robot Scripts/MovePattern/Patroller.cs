@@ -23,9 +23,8 @@ public class Patroller : MonoBehaviour
         }
         else
         {
-            current = current + 1;
+            current = (current + 1) % points.Length;
         }
-            //current = (current + 1) % points.Length;
 
         if (current == 0)
         {
