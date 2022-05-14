@@ -10,12 +10,16 @@ public class DoorInteractPressurePlate : MonoBehaviour {
 
     private void Awake() {
         door = doorGameObject.GetComponent<IDoor>();
+       
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
+        AudioSource button = GameObject.FindGameObjectWithTag("Button").GetComponent<AudioSource>();
         if (collision.CompareTag("Player")) {
             // Player entered collider!
             door.OpenDoor();
+            button.enabled = true;
         }
     }
 
