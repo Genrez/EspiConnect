@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,10 +9,12 @@ public class PlayerController : MonoBehaviour
     private string robotTouching = "";
     private string playerState = "Player"; 
     private PlayerTransform playerTransform;
+    private Scene currentScene;
 
     void Start()
     {
         playerTransform = GetComponent<PlayerTransform>();
+        currentScene = SceneManager.GetActiveScene();
     }
 
     // Update is called once per frame
@@ -21,7 +24,7 @@ public class PlayerController : MonoBehaviour
             hack.Play();
             playerTransform.Transform(robotTouching);
         }
-        if (robotTouching != "" && Input.GetKeyDown(KeyCode.F))
+        if (robotTouching != "" && Input.GetKeyDown(KeyCode.F) && currentScene.name == "Level4")
         {
             RobotController robotToDisable = GameObject.Find(robotTouching).GetComponent<RobotController>();
             robotToDisable.DisableRobot();
