@@ -10963,7 +10963,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f1705dd8a3aa0a4a94a5001d9b6f87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorGameObject: {fileID: 475309062}
+  doorGameObjects:
+  - {fileID: 475309062}
 --- !u!61 &1270235910
 BoxCollider2D:
   m_ObjectHideFlags: 0

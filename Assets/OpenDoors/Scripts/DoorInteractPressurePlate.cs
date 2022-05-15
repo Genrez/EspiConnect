@@ -2,24 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorInteractPressurePlate : MonoBehaviour {
+public class DoorInteractPressurePlate : MonoBehaviour
+{
 
-    [SerializeField] private GameObject doorGameObject;
-    private IDoor door;
-    private float timer;
+    [SerializeField] private GameObject[] doorGameObjects;
 
-    private void Awake() {
-        door = doorGameObject.GetComponent<IDoor>();
-       
-
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision) {
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         AudioSource button = GameObject.FindGameObjectWithTag("Button").GetComponent<AudioSource>();
-        if (collision.CompareTag("Player")) {
-            // Player entered collider!
-            door.OpenDoor();
-            button.enabled = true;
+        if (collision.CompareTag("Player"))
+        {
+            for (int i = 0; i < doorGameObjects.Length; ++i)
+            {
+                doorGameObjects[i].GetComponent<IDoor>().OpenDoor();
+                button.enabled = true; 
+            }
         }
     }
 
