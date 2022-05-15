@@ -569,6 +569,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 607721773}
     m_Modifications:
+    - target: {fileID: 6151042470572013504, guid: bd06e293505e36244bb7a5b0c70deaae, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -339.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151042470572013504, guid: bd06e293505e36244bb7a5b0c70deaae, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 161.59
+      objectReference: {fileID: 0}
     - target: {fileID: 6151042471264418274, guid: bd06e293505e36244bb7a5b0c70deaae, type: 3}
       propertyPath: m_Name
       value: DashAbility
