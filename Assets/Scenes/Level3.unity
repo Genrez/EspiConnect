@@ -475,19 +475,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: messages.Array.data[1].message
-      value: In this level there will be more move robot
+      value: In this level, there will be patrolling robots.
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: messages.Array.data[2].message
-      value: there is also a door in the map
+      value: There is also a locked door.
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: messages.Array.data[3].message
-      value: try to find out how to open it
+      value: Try to find out how to open it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[4].actorId
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: messages.Array.data[4].message
-      value: 'Tip: button'
+      value: Got it.
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: messages.Array.data[5].message
