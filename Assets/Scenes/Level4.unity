@@ -1163,7 +1163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: messages.Array.data[0].message
-      value: Well done reaching this far!
+      value: Well done in reaching this far!
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: messages.Array.data[1].actorId
@@ -1175,16 +1175,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: messages.Array.data[2].message
-      value: Now you can disable robots!
+      value: You've unlocked the "Hack" ability. Now you can disable robots!
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: messages.Array.data[3].message
-      value: Press F to disable robots next to you.
+      value: Press F to disable robots next to you. Use this as many times as you
+        want without restriction!
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: messages.Array.data[4].message
       value: It seems like you will need to use a combination of both disabling and
-        disguising as robots for this one
+        disguising as robots for this one.
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: messages.Array.data[5].message
@@ -2218,11 +2219,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5508830662580191563, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.12
+      value: 5.08
       objectReference: {fileID: 0}
     - target: {fileID: 5508830662580191563, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.27
+      value: -3.95
       objectReference: {fileID: 0}
     - target: {fileID: 5508830662580191563, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2255,6 +2256,18 @@ PrefabInstance:
     - target: {fileID: 5508830662580191563, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768029085705357368, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768029085705357368, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768029085705357368, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.333338
       objectReference: {fileID: 0}
     - target: {fileID: 6229683896008527804, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_Name
@@ -2364,6 +2377,100 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 6508172968617571856, guid: 3f4cd189377f64accab3d5b45d199d4d, type: 3}
   m_PrefabInstance: {fileID: 74928743}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &989358511
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1778047257537308877, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388817, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_Name
+      value: Black Robot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388827, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388827, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388827, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388827, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388827, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388827, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388827, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388827, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388827, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388827, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388827, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901453842165388830, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+      propertyPath: gameoverScreen
+      value: 
+      objectReference: {fileID: 1132556547}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+--- !u!1 &989358512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2901453842165388817, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+  m_PrefabInstance: {fileID: 989358511}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &989358513 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2901453842165388831, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+  m_PrefabInstance: {fileID: 989358511}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &989358514 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2901453842165388829, guid: a84b324ed3b2ae54da5e76e444842ca0, type: 3}
+  m_PrefabInstance: {fileID: 989358511}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &989358515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989358512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3a5f9cc814e6544ad62008ad8f154d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robot: {fileID: 989358513}
+  animator: {fileID: 989358514}
 --- !u!1 &1039703744 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5361786255699826606, guid: 7a14ffdbf57d543e1a384f192df057d5, type: 3}
