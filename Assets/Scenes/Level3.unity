@@ -213,19 +213,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5768029085705357368, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.8525
+      value: 6.0590076
       objectReference: {fileID: 0}
     - target: {fileID: 5768029085705357368, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.1310005
+      value: 7.1323967
       objectReference: {fileID: 0}
     - target: {fileID: 5768029085705357368, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0279
+      value: -0.0492
       objectReference: {fileID: 0}
     - target: {fileID: 5768029085705357368, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.4154
+      value: -0.4265
       objectReference: {fileID: 0}
     - target: {fileID: 6229683896008527804, guid: 46dc5aea2ce204c5da750f7905268aa8, type: 3}
       propertyPath: m_Name
@@ -355,6 +355,42 @@ PrefabInstance:
     - target: {fileID: 2452452411522246438, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: m_Name
       value: NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: Good job spy!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[1].actorId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[1].message
+      value: In this level there will be more move robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[2].message
+      value: there is also a door in the map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[3].message
+      value: try to find out how to open it
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[4].message
+      value: 'Tip: button'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[5].message
+      value: Good luck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452452411522246439, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
+      propertyPath: messages.Array.data[8].message
+      value: That'll be all, good luck my fellow Spy.
       objectReference: {fileID: 0}
     - target: {fileID: 2452452411522246443, guid: 576fac2cbf4625b4d8750121b34c2aba, type: 3}
       propertyPath: m_RootOrder
