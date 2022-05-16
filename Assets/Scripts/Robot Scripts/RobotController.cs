@@ -16,7 +16,7 @@ public class RobotController : MonoBehaviour
     void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
-        detectionBar.SetInitialSlider(currentDetectionLevel);
+        detectionBar.SetInitialSliderValue(currentDetectionLevel);
     }
 
     // Update is called once per frame
@@ -33,7 +33,7 @@ public class RobotController : MonoBehaviour
         {
             DecreaseDetectionLevel(1.7f);
         }
-        if (detectionBar.getSliderValue() >= 20)
+        if (detectionBar.GetSliderValue() >= 20)
         {
             gameoverScreen.gameObject.SetActive(true);
             AudioSource audio = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
