@@ -30,12 +30,12 @@ public class RobotController : MonoBehaviour
         {
             if (gameObject.name.Substring(0, 5) != playerController.GetPlayerState().Substring(0, 5))
             {
-                IncreaseDetectionLevel(1.8f);
+                IncreaseDetectionLevel(1.7f);
             }
         }
         else if (!playerInView && currentDetectionLevel > 0)
         {
-            DecreaseDetectionLevel(1.8f);
+            DecreaseDetectionLevel(1.7f);
         }
         if (currentDetectionLevel >= 20)
         {
