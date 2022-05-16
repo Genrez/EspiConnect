@@ -12,7 +12,10 @@ public class RobotController : MonoBehaviour
 
     private float currentDetectionLevel = 0;
 
-
+    private void Awake()
+    {
+        Application.targetFrameRate = 60;
+    }
     //This method is called at the start
     void Start()
     {
