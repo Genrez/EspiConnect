@@ -12,15 +12,11 @@ public class RobotController : MonoBehaviour
 
     private float currentDetectionLevel = 0;
 
-    private void Awake()
-    {
-        Application.targetFrameRate = 60;
-    }
     //This method is called at the start
     void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
-        detectionBar.SetDetection(currentDetectionLevel);
+        detectionBar.SetInitialSlider(currentDetectionLevel);
     }
 
     // Update is called once per frame
@@ -30,14 +26,14 @@ public class RobotController : MonoBehaviour
         {
             if (gameObject.name.Substring(0, 5) != playerController.GetPlayerState().Substring(0, 5))
             {
-                IncreaseDetectionLevel(1.7f);
+                IncreaseDetectionLevel();
             }
         }
         else if (!playerInView && currentDetectionLevel > 0)
         {
             DecreaseDetectionLevel(1.7f);
         }
-        if (currentDetectionLevel >= 20)
+        if (detectionBar.getSliderValue() >= 20)
         {
             gameoverScreen.gameObject.SetActive(true);
             AudioSource audio = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
@@ -47,15 +43,15 @@ public class RobotController : MonoBehaviour
         }
     }
 
-    private void IncreaseDetectionLevel(float amountToIncrease)
+    private void IncreaseDetectionLevel()
     {
-        currentDetectionLevel += amountToIncrease;
+        currentDetectionLevel += Time.deltaTime;
         detectionBar.SetDetection(currentDetectionLevel);
     }
 
     private void DecreaseDetectionLevel(float amountToDecrease)
     {
-        currentDetectionLevel -= amountToDecrease;
+        currentDetectionLevel -= Time.deltaTime;
         detectionBar.SetDetection(currentDetectionLevel);
     }
 

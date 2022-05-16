@@ -9,12 +9,22 @@ public class DetectionBar : MonoBehaviour
 
     public void SetDetection(float sliderValue)
     {
-        slider.value = sliderValue;
+        slider.value = Mathf.Lerp(0, 400, sliderValue / 5);
     }
 
     public void SetMaxDetection(int max)
     {
         slider.maxValue = max;
         slider.value = 0;
+    }
+
+    public void SetInitialSlider(float sliderValue)
+    {
+        slider.value = sliderValue;
+    }
+
+    public float getSliderValue()
+    {
+        return slider.value;
     }
 }
